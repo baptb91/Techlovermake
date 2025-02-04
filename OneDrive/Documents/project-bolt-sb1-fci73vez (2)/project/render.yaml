@@ -9,9 +9,5 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-    buildFilter:
-      paths:
-        - package.json
-        - api/**
     packages:
       - ffmpeg-static
