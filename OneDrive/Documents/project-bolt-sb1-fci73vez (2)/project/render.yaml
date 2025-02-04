@@ -3,7 +3,8 @@ services:
     name: instagram-reel-api
     env: node
     plan: free
-    buildCommand: npm install
+    buildCommand: |
+      cp package.json /opt/render/project/src/ && cd /opt/render/project/src && npm install
     startCommand: npm start
     rootDir: .
     envVars:
