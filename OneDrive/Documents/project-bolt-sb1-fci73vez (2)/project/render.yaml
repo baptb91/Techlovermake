@@ -3,12 +3,10 @@ services:
     name: instagram-reel-api
     env: node
     plan: free
-    buildCommand: |
-      cp package.json /opt/render/project/src/ && cd /opt/render/project/src && npm install
-    startCommand: npm start
-    rootDir: .
+    buildCommand: npm install
+    startCommand: node api/server.js
     envVars:
       - key: NODE_ENV
         value: production
     packages:
-      - ffmpeg-static
+      - ffmpeg
