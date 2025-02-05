@@ -11,8 +11,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "node server.js",
-    "start:api": "node server.js"
+    "start": "node src/server.js",
+    "start:api": "node src/server.js"
   },
   "dependencies": {
     "@ffmpeg/core": "^0.12.6",
