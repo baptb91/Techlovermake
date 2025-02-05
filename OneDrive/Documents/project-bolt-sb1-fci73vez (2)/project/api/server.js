@@ -3,7 +3,7 @@ import cors from 'cors';
 import multer from 'multer';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
-import { processVideoAPI } from './process-video.js';
+import { processVideoAPI } from './api/process-video.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
