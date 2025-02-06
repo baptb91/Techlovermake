@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: instagram-reel-api
+    name: instagram-real-api
     env: node
     plan: free
     buildCommand: npm install && npm run build
@@ -9,6 +9,4 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-    packages:
-      - ffmpeg
-    rootDirectory: .
+    rootDirectory: /
