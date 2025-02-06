@@ -3,10 +3,10 @@ services:
     name: instagram-real-api
     env: node
     plan: free
-    buildCommand: npm install && npm run build
-    startCommand: npm start
+    buildCommand: vite build  # Modifié car vous utilisez vite
+    startCommand: node server.js  # Modifié selon votre package.json
     nodeVersion: 18.0.0
     envVars:
       - key: NODE_ENV
         value: production
-    rootDirectory: ./project  # Modifié pour pointer vers le dossier project
+    rootDirectory: ./  # Modifié pour pointer vers la racine
