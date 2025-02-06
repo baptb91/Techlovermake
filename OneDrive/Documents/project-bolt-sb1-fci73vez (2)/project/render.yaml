@@ -1,12 +1,12 @@
 services:
   - type: web
-    name: instagram-real-api
+    name: instagram-reel-generator
     env: node
     plan: free
-    buildCommand: npm install && npm run build  # Modifié pour utiliser npm run build
-    startCommand: npm start  # Modifié pour utiliser npm start
-    nodeVersion: 18.0.0
+    buildCommand: npm install
+    startCommand: node server.js
     envVars:
       - key: NODE_ENV
         value: production
-    rootDirectory: ./project  # Spécifié car vos fichiers sont dans le dossier project
+    packages:
+      - ffmpeg
