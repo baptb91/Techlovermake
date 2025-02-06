@@ -10,3 +10,4 @@ services:
         value: production
     packages:
       - ffmpeg
+    rootDirectory: .
