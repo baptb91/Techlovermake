@@ -9,4 +9,4 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-    rootDirectory: /
+    rootDirectory: ./project  # Modifié pour pointer vers le dossier project
